@@ -18,6 +18,11 @@ public class Controller {
             new Product("Tiramisu", 85)
     );
 
+    @GetMapping
+    public String welcome() {
+        return "Bine ati venit la restaurantul HORECA!";
+    }
+
     @GetMapping("/meniu")
     public List<Product> getMenu() {
         return menu;
